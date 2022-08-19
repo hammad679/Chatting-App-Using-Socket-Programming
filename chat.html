@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+  <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+  <title>Chat Wet</title>
+</head>
+
+<body>
+  <header>
+    <h1>Chat Wet</h1>
+  </header>
+
+  <section>
+    <div id="change_username">
+      <input id="username" type="text" placeholder="Change Username" />
+      <button id="send_username" class="button" type="button">Change</button>
+    </div>
+
+  </section>
+
+  <section id="chatroom">
+    <section id="feedback"></section>
+  </section>
+
+
+
+  <section id="input_area">
+    <input id="message" class="vertical-align" type="text" />
+    <label class="upload_container vertical-align" for="upload">
+      <i class="vertical-align material-icons file_icon" style="font-size:28px">file_upload</i>
+    </label>
+    <input id="upload" class="file_input" type="file">
+    <button id="send_message" class="vertical-align button" type="button">Send</button>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js"
+    integrity="sha512-ErYZLDi4WRoox2JhOIADWBydTRhMJ0KIXnv5C1GvuY8YooLGapnebaM3iRGhwS6/E9ONXj0MRXp6bhu73sdFkg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- <script src="/name.js"></script> -->
+  <script src="/client.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/siofu/client.js"></script>
+</body>
+
+</html>
